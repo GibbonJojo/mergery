@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(190, 0, 190, 0.39);
+    color: rgb(82, 0, 82);
+}
+
+.container {
+    max-width: 580px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Yeon Sung', cursive;
+    font-size: 70px;
+}
+
+h3 {
+    margin-top: -15px;
+}
+
+ol li {
+    text-align: left;
+    display: list-item;
+    list-style-position: inside;
+}
+
+ol h2 {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+    margin: 12px auto;
+}
+
+li {
+    display: inline-block;
+}
+
+.title {
+    width: 100%;
+    height: 25px;
+}
+
+.submit {
+    display: block;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(140, 0, 140, 0.39);
+    border: 1px solid rgba(90, 0, 90, 0.39);
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.note {
+    font-size: 12px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(140, 0, 140, 0.39);
+}

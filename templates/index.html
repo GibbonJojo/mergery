@@ -1,0 +1,28 @@
+{% extends "_header.html" %}
+
+{% block content %}
+    <h3>Upload your Files (Maximum: 20)</h3>
+
+    <form action="{{ url_for('merge') }}" method="post" enctype="multipart/form-data">
+        <ol>
+            <li>
+                <h2>Upload your PDF-Files</h2>
+                <p><input class="upload" type="file" name="file" accept=".pdf" multiple required></p>
+            </li>
+
+            <li>
+                <h2>Choose the title for your merged document</h2>
+                <p><input class="title" placeholder="Enter the new title" type="text" name="title" id="title" required></p>
+            </li>
+
+            <li>
+                <h2>Merge!</h2>
+                <p><input class="submit" type="submit" value="Merge and Download" id="submit"></p>
+            </li>
+
+        </ol>
+    </form>
+
+    <div class="note">Note: Documents will be merged in alphabetical order. Rename your documents first when you require a specific order</div>
+
+{% endblock %}
